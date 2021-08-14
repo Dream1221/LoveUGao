@@ -2,8 +2,20 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>I Love You Forever</title>
+	<title>I Love U Yang</title>
 	<meta name="author" content="Mike">
+	<link type="text/css" rel="stylesheet" href="./file/default.css">
+	<script type="text/javascript" src="./file/jquery.min.js"></script>
+	<script type="text/javascript" src="./file/jscex.min.js"></script>
+	<script type="text/javascript" src="./file/jscex-parser.js"></script>
+	<script type="text/javascript" src="./file/jscex-jit.js"></script>
+	<script type="text/javascript" src="./file/jscex-builderbase.min.js"></script>
+	<script type="text/javascript" src="./file/jscex-async.min.js"></script>
+	<script type="text/javascript" src="./file/jscex-async-powerpack.min.js"></script>
+	<script type="text/javascript" src="./file/functions.js" charset="utf-8"></script>
+	<script type="text/javascript" src="./file/love.js" charset="utf-8"></script>
+
+
 
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<!--导库-->
@@ -28,6 +40,9 @@
 	<audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="music/1.mp3">
 		你的浏览器版本太低，不支持audio标签
 	</audio>
+
+
+
 	<style type="text/css">
 		audio {
 			display: none;
@@ -54,14 +69,14 @@
 		class="spanstyle">g</span><span id="span19" class="spanstyle">!</span>
 
 
-
 	<script type="text/javascript">
-		setTimeout(makesnake, 42000);
+		setTimeout(makesnake, 42);
 	</script>
+
 	<!--#Header-->
 	<div id="header" style="opacity:0.85">
 		<div id="title">
-			I Love You Forever
+			I Love You Yang
 		</div>
 	</div>
 
@@ -70,62 +85,179 @@
 		<span id="blink" style="display: none;">_</span>
 	</div>
 	<div id="contentToWrite" style="display:none">
-		一 七夕快乐呢~, <br>
-		来了，我们真爱要好好把握。不管面临多大的压力，<br>
-		不管前面的路如何崎岖.<br>
-		不管经历过什么,我仍坚信最浪漫的事就是和<br>
-		你一起慢慢变老.<br>
-		还记得否,曾经的点点滴滴，从相识到现在，<br>
-		从冷漠到关心,从谢绝到依赖，从生疏到相爱,<br>
-		一切似乎都是那么遥远,又似乎那么触手可及.<br>
-		正如某人说的那样,但求岁月静好,现世安稳.<br>
-		一生守候不是一句简单而苍白的山盟海誓，<br>
-		而是无数个平淡的日子同舟共济，相濡以沫.<br>
-		相信右下角的计时器,将永远继续下去,直至数据溢出.<br>
+		❤️ <br>
+		七夕节快乐呀💓<br>
+		害,虽然已经被你拒绝了一次,呜呜呜~<br>
+		但还是想和你说,我爱你😘<br>
 		<br>
-		-----------------------Just for You<br>
+		想和你在一起,一起做很多事情<br>
+		和你一起看看不完的电影🎬<br>
+		和你一起吃吃不尽的美食🍖<br>
+		和你一起说说不完的话😊<br>
+		和你一起走走不完的路👫<br>
+		<br>
+		送你回宿舍的那天晚上,我好像就喜欢上你了💓<br>
+		从那天开始算的话⏰<br>
+		有一个月了,虽然目前时间短<br>
+		但我设计了一个计时器,记录着我喜欢你的时间<br>
+		对你的爱,就像这计时器,永不停止💑<br>
+
+		<br>
+		不管你是否同意
+		<br>
+		一首星晴送给你,祝咱俩每天都有好心情😋<br>
+
 	</div>
+
+	<div>
+		<div id="wrap">
+			<canvas id="cs" width="1100" height="680"></canvas>
+		</div>
+
+	</div>
+
+
 	<script type="text/javascript">
 		writeContent(true);
 	</script>
 
+	<script>
+		(function () {
+			var canvas = $('#cs');
 
-	<!-- #container -->
-	<div id="container">
-		<ul id="myRoundabout" class="roundabout-holder" style="padding: 0px; position: relative; z-index: 100;">
-			<li class="roundabout-moveable-item roundabout-in-focus" current-scale="1.0000"
-				style="position: absolute; left: 122px; top: 87px; width: 350px; height: 222px; opacity: 1; z-index: 400; font-size: 16px;">
-				<img src="img/1.jpg" alt="">
-			</li>
-			<li class="roundabout-moveable-item" current-scale="0.7927"
-				style="position: absolute; left: -0.4px; top: 110px; width: 277.445px; height: 175.9794px; opacity: 1; z-index: 296; font-size: 12.68px;">
-				<img src="img/2.jpg" alt="">
-			</li>
-			<li class="roundabout-moveable-item" current-scale="0.4573"
-				style="position: absolute; left: 473.8px; top: 147.2px; width: 160.055px; height: 101.5206px; opacity: 1; z-index: 129; font-size: 7.32px;">
-				<img src="img/3.jpg" alt="">
-			</li>
-			<li class="roundabout-moveable-item" current-scale="0.4573"
-				style="position: absolute; left: -39.8px; top: 147.2px; width: 160.055px; height: 101.5206px; opacity: 1; z-index: 129; font-size: 7.32px;">
-				<img src="img/4.jpg" alt="">
-			</li>
-			<li class="roundabout-moveable-item" current-scale="0.7927"
-				style="position: absolute; left: 317px; top: 110px; width: 277.445px; height: 175.9794px; opacity: 1; z-index: 296; font-size: 12.68px;">
-				<img src="img/5.jpg" alt="">
-			</li>
-		</ul>
-	</div>
-	<script type="text/javascript">
-		setTimeout(move, 15000);
+			if (!canvas[0].getContext) {
+				$("#error").show();
+				return false;
+			}
+
+			var width = canvas.width();
+			var height = canvas.height();
+			canvas.attr("width", width);
+			canvas.attr("height", height);
+			var opts = {
+				seed: {
+					x: width / 2 - 20,
+					color: "rgb(190, 26, 37)",
+					scale: 2
+				},
+				branch: [
+					[535, 680, 570, 250, 500, 200, 30, 100, [
+						[540, 500, 455, 417, 340, 400, 13, 100, [
+							[450, 435, 434, 430, 394, 395, 2, 40]
+						]],
+						[550, 445, 600, 356, 680, 345, 12, 100, [
+							[578, 400, 648, 409, 661, 426, 3, 80]
+						]],
+						[539, 281, 537, 248, 534, 217, 3, 40],
+						[546, 397, 413, 247, 328, 244, 9, 80, [
+							[427, 286, 383, 253, 371, 205, 2, 40],
+							[498, 345, 435, 315, 395, 330, 4, 60]
+						]],
+						[546, 357, 608, 252, 678, 221, 6, 100, [
+							[590, 293, 646, 277, 648, 271, 2, 80]
+						]]
+					]]
+				],
+				bloom: {
+					num: 700,
+					width: 1080,
+					height: 650,
+				},
+				footer: {
+					width: 1200,
+					height: 5,
+					speed: 10,
+				}
+			}
+
+			var tree = new Tree(canvas[0], width, height, opts);
+			var seed = tree.seed;
+			var foot = tree.footer;
+			var hold = 1;
+
+			canvas.click(function (e) {
+				var offset = canvas.offset(), x, y;
+				x = e.pageX - offset.left;
+				y = e.pageY - offset.top;
+				if (seed.hover(x, y)) {
+					hold = 0;
+					canvas.unbind("click");
+					canvas.unbind("mousemove");
+					canvas.removeClass('hand');
+				}
+			}).mousemove(function (e) {
+				var offset = canvas.offset(), x, y;
+				x = e.pageX - offset.left;
+				y = e.pageY - offset.top;
+				canvas.toggleClass('hand', seed.hover(x, y));
+			});
+
+			var seedAnimate = eval(Jscex.compile("async", function () {
+				seed.draw();
+				while (hold) {
+					$await(Jscex.Async.sleep(10));
+				}
+				while (seed.canScale()) {
+					seed.scale(0.95);
+					$await(Jscex.Async.sleep(10));
+				}
+				while (seed.canMove()) {
+					seed.move(0, 2);
+					foot.draw();
+					$await(Jscex.Async.sleep(10));
+				}
+			}));
+
+			var growAnimate = eval(Jscex.compile("async", function () {
+				do {
+					tree.grow();
+					$await(Jscex.Async.sleep(10));
+				} while (tree.canGrow());
+			}));
+
+			var flowAnimate = eval(Jscex.compile("async", function () {
+				do {
+					tree.flower(2);
+					$await(Jscex.Async.sleep(10));
+				} while (tree.canFlower());
+			}));
+
+			var moveAnimate = eval(Jscex.compile("async", function () {
+				tree.snapshot("p1", 240, 0, 610, 680);
+				while (tree.move("p1", 500, 0)) {
+					foot.draw();
+					$await(Jscex.Async.sleep(10));
+				}
+				foot.draw();
+				tree.snapshot("p2", 500, 0, 610, 680);
+
+			}));
+
+			var jumpAnimate = eval(Jscex.compile("async", function () {
+				var ctx = tree.ctx;
+				while (true) {
+					tree.ctx.clearRect(0, 0, width, height);
+					tree.jump();
+					foot.draw();
+					$await(Jscex.Async.sleep(25));
+				}
+			}));
+
+
+			var runAsync = eval(Jscex.compile("async", function () {
+				$await(seedAnimate());
+				$await(growAnimate());
+				$await(flowAnimate());
+				$await(moveAnimate());
+
+				textAnimate().start();
+
+				$await(jumpAnimate());
+			}));
+
+			runAsync().start();
+		})();
 	</script>
-
-	<!-- #bg -->
-	<div id="bg">
-		<canvas id="garden" width="1583" height="709">
-			<c style="color: #FFF; text-shadow:2px 3px 3px #222; font-family:Microsoft YaHei; font-size:50px">
-				❥(^_-)!</c>
-		</canvas>
-	</div>
 
 	<!-- #time -->
 	<div id="time">
@@ -134,8 +266,5 @@
 			setTimeout("showTime()", 40000);
 		</script>
 	</div>
-
-
-
 
 </body>
